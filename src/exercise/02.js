@@ -64,7 +64,7 @@ const useAsync = (initialState) => {
         dispatch({type: 'rejected', error})
       },
     )
-  },[])
+  },[dispatch])
   return {...state, run};
 }
 
